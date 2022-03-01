@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Form } from 'react-bootstrap'
 import { questionHTML } from '../Questionario';
 import { ButtonStyle, DivForm, FormStyle, RadioStyle, Titulo, } from '../styles/CardQuestion'
+import {ProgressBar} from 'react-bootstrap'
 
 
 
@@ -68,7 +69,7 @@ export default class Question1 extends Component {
             <DivForm>
                 <FormStyle onSubmit={this.handleSubmit}>
                     <Form.Group className="mb-3" controlId="control-radio" style={{ padding: "4rem" }}>
-                    {/* <ProgressBar  max="6" animated now={this.state.numberQuestion} /> */}
+                    <ProgressBar  max="6" animated now={this.state.numberQuestion} /> 
                     
                     
                   

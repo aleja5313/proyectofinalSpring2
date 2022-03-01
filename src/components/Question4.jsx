@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Form } from 'react-bootstrap'
 import { questionFigma } from '../Questionario';
-
+import {ProgressBar} from 'react-bootstrap'
 import { ButtonStyle, DivForm, FormStyle, RadioStyle, Titulo ,} from '../styles/CardQuestion'
 
 export default class Question4 extends Component {
@@ -65,7 +65,7 @@ export default class Question4 extends Component {
                 
                 <FormStyle onSubmit={this.handleSubmit}>
                     <Form.Group className="mb-3" controlId="control-radio" style={{ padding: "4rem" }}>
-                    {/* <ProgressBar  max="4" animated now={this.state.numberQuestion} /> */}
+                    <ProgressBar  max="4" animated now={this.state.numberQuestion} />
                         <Titulo>{this.state.question.question}</Titulo>
                         <RadioStyle
                             type="radio"
